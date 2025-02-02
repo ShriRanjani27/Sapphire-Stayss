@@ -1,0 +1,307 @@
+/* Ensure the body and HTML fill the entire viewport */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+/* Navbar styling (Unchanged from your original styling) */
+.navbar {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Darker shadow gradient */
+    position: absolute; /* Ensures it overlays the carousel */
+    width: 100%;
+    z-index: 1000; /* Keeps it above other elements */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Pushes nav items to the right */
+}
+
+.nav-link, .navbar-brand {
+    font-size: 1.2rem;
+    font-family:"Aboreto", system-ui; /* Apply MonteCarlo font */
+    color: white; /* Change color as needed for visibility */
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+}
+
+/* Contact Caption Styles */
+.contact-caption {
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-family: "MonteCarlo", cursive;
+    font-size: 4rem;
+    z-index: 2;
+    padding: 10px 20px;
+    border-radius: 8px;
+    padding-bottom: 20px;
+}
+
+/* Background Image */
+.background-image {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.background-image img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Form Container with Translucent Background */
+.contact-form-container {
+    font-size: 30px;
+    font-family:"Open Sans", serif;; /* Apply MonteCarlo font */
+    color: white;
+    position: absolute;
+    top: 30%; /* Adjust to position below the caption */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    z-index: 2;
+    backdrop-filter: blur(4px); /* Optional: Adds a blur effect */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0.4, 0, 0, 0.4);
+}
+
+/* Contact Information Section */
+.contact-info {
+   
+    color: white;
+   padding-left: 60px;
+   padding-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 1.5rem;
+    font-family:  "Aboreto", system-ui;
+    color: white;
+    text-decoration: none;
+}
+.contact-Email{
+   font-family: "MonteCarlo", cursive!important;
+}
+.card{
+    height: 300px;
+    width: 400px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 576px) {
+    /* Navbar Styling */
+    .navbar {
+        padding: 5px;
+        position: absolute; /* Overlay on the carousel */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        font-size: 12px; /* Smaller font for small devices */
+    }
+    
+    .navbar-brand {
+        font-size: 16px; /* Slightly larger for branding */
+        color: #fff; /* Ensure visibility */
+    }
+    
+    .nav-link {
+        font-size: 11px; /* Smaller font for links */
+        color: #fff !important; /* Force white text for visibility */
+       
+    }
+    .navbar a:hover{
+        color:white;
+        text-decoration: underline;
+    }
+    .navbar-toggler {
+        border-color: #fff; /* White border for toggle icon */
+    }
+    .navbar-collapse {
+        text-align: right;
+    }
+    
+    .navbar-toggler-icon {
+        width: 20px; /* Set smaller width */
+        height: 20px; /* Set smaller height */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28150, 150, 150, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    /* Contact Header Styling */
+    .contact-caption {
+        position: relative;
+        font-size: 2rem; /* Adjust for small devices */
+        bottom: 0;
+        top: 60px; /* Place below the navbar */
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    /* Contact Form Container */
+    .contact-form-container {
+        width: 90%;
+        font-size: 20px;
+        top: 17%;
+        padding: 15px;
+        margin: 10px auto; /* Center align the container */
+        border-radius: 10px;
+        backdrop-filter: blur(4px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.4);
+    }
+
+    /* Contact Info Section */
+    .contact-info {
+        padding: 10px; /* Proper padding for smaller devices */
+        font-size: 1rem;
+    }
+
+    .contact-info p {
+        font-size: 1rem; /* Adjust font size for smaller devices */
+    }
+
+    /* Card Styling */
+    .card {
+        height: 250px;
+        width: 100%; /* Make the card take full width */
+        margin-bottom: 15px; /* Add spacing between cards */
+    }
+
+    /* Map Styling (If Any) */
+    .card img {
+        object-fit: cover; /* Ensure the image scales well */
+        height: 100%; /* Keep the height consistent */
+    }
+
+    /* Header and Section Titles */
+    .header {
+        font-size: 2rem;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .main-section {
+        padding: 10px;
+    }
+}
+@media (min-width: 577px) and (max-width: 992px){
+    .navbar {
+        padding: 10px; /* Slightly more padding for medium devices */
+        position: absolute; /* Overlay on the carousel */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        font-size: 14px; /* Adjust font size */
+    }
+    
+    .navbar-brand {
+        font-size: 24px; /* Larger branding size */
+        color: #fff; /* Ensure visibility */
+    }
+    
+    .nav-link {
+        font-size: 20px; /* Slightly larger font for links */
+        color: #fff !important; /* Force white text for visibility */
+    }
+    .navbar a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+    .navbar-toggler {
+        border-color: #fff; /* White border for toggle icon */
+    }
+    .navbar-collapse {
+        text-align: right; /* Align links to the right */
+    }
+    
+    .navbar-toggler-icon {
+        width: 30px; /* Adjust width */
+        height: 30px; /* Adjust height */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28150, 150, 150, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    /* Contact Header Styling */
+    .contact-caption {
+        position: relative;
+        font-size: 3rem; /* Adjust for medium devices */
+        bottom: 0;
+        top: 80px; /* Place below the navbar */
+        padding: 15px 25px;
+        border-radius: 8px;
+    }
+
+    /* Contact Form Container */
+    .contact-form-container {
+        width: 90%; /* Wider for medium devices */ 
+        top: 20%;
+        font-size: 18px;
+        padding: 20px;
+        margin: 20px auto; /* Center align the container */
+        border-radius: 10px;
+        backdrop-filter: blur(4px);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    }
+
+    /* Contact Info Section */
+    .contact-info {
+        padding: 15px; /* Adjust padding for medium devices */
+        font-size: 1.1rem;
+    }
+
+    .contact-info p {
+        font-size: 1.2rem; /* Slightly larger font size */
+    }
+
+    /* Card Styling */
+    .card {
+        height: 300px; /* Increased height for medium screens */
+        width: 100%; /* Ensure full width */
+        margin-bottom: 20px; /* Add spacing between cards */
+    }
+
+    /* Map Styling (If Any) */
+    .card img {
+        object-fit: cover; /* Ensure the image scales well */
+        height: 100%; /* Keep the height consistent */
+    }
+
+    /* Header and Section Titles */
+    .header {
+        font-size: 2.5rem; /* Larger font size */
+        padding: 15px;
+        text-align: center;
+    }
+
+    .section-title {
+        font-size: 2rem; /* Larger section title font size */
+        text-align: center;
+    }
+
+    .main-section {
+        padding: 20px;
+    }
+}

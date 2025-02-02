@@ -1,0 +1,539 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    padding: 1rem !important;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0))!important; /* Darker shadow gradient */
+    position: absolute!important; /* Ensures it overlays the carousel */
+    width: 100%!important;
+    z-index: 1000!important; /* Keeps it above other elements */
+}
+
+.navbar-nav {
+    margin-left: auto!important; /* Pushes nav items to the right */
+}
+
+.nav-link, .navbar-brand {
+    font-size: 1.2rem!important;
+    font-family: "Aboreto", system-ui; /* Apply MonteCarlo font */
+    color: white!important; /* Change color as needed for visibility */
+}
+
+.navbar-brand {
+    font-size: 1.7rem!important;
+}
+
+/* Resort Caption Styles */
+.stays-caption{
+    height: 50vh;
+    font-size: 5rem;
+    position: absolute; /* Positioning to overlay on carousel */
+      bottom: 10%; /* Adjust as needed for vertical positioning */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Adjust for centering */
+      text-align: center; /* Center text within caption */
+      color: white;
+      font-family: "MonteCarlo", cursive;
+      z-index: 2;
+  }
+  
+  .background-image {
+    width: 100%!important; /* Full width */
+    height: 90vh!important; /* Set height to 50% of the viewport height */
+    overflow: hidden!important; /* Hide overflow if any */
+  }
+  
+  .background-image img {
+    width: 100%!important; /* Full width of the container */
+    height: auto!important; /* Maintain aspect ratio */}
+    .background-image::after {
+      content: ""; /* Empty content for the pseudo-element */
+      position: absolute; /* Position over the background */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0, 0, 0, 0.4); /* Black tint with 40% opacity */
+      z-index: 1; /* Ensures it overlays the image */
+    }
+
+.footer{
+    text-align: center!important;
+    color: white!important;
+    background-image: linear-gradient(to bottom,#dbd9d1cb,#858585,#333333, black)!important;
+    padding-top: 50px!important;
+   
+}
+
+.footer-main{
+    font-size: 3rem;
+    font-family: "MonteCarlo", cursive;  
+    
+}
+.footer h5, 
+.footer a {
+    color: white; /* Set text color to white */
+    font-weight: unset!important;
+}
+
+.footer a:hover {
+    color: #181610;
+    text-decoration: underline; /* Optional: Underline on hover for better UX */
+}
+
+.footer-box{
+    min-width: 300px;
+    font-family: "Cinzel", serif;
+}
+.footer .py-5{
+  padding-bottom: 0!important;
+}
+.footer .nav{
+  font-size: 1.2rem;
+}
+.container-rights.col-md-4{
+  width: 100%!important;
+}
+.gallery{
+    padding-top: 40px;
+    background-color: #dbd9d1cb;
+  }
+  body {
+      padding:0; }
+    
+    /* line 2, src/assets/scss/theme.scss */
+    img {
+      max-width: 100%; }
+    
+    /* line 5, src/assets/scss/theme.scss */
+    a, .a:hover {
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
+    
+    /* line 8, src/assets/scss/theme.scss */
+    .container-fluid-gal {
+      width: 94%;
+      margin: 0px auto;
+      max-width: 94%; }
+    
+    /* line 13, src/assets/scss/theme.scss */
+    .border-round-0 {
+      border-radius: 0; }
+    
+    /* line 16, src/assets/scss/theme.scss */
+    .mt-neg100 {
+      margin-top: -100px; }
+    
+    /* line 19, src/assets/scss/theme.scss */
+    .min-50vh {
+      min-height: 50vh; }
+    
+    /* line 22, src/assets/scss/theme.scss */
+    .dropdown-header {
+      font-size: 1.5rem; }
+    
+    /* line 25, src/assets/scss/theme.scss */
+    .fixed-top {
+      border-bottom: 1px solid #f1f1f1; }
+    
+    /* line 28, src/assets/scss/theme.scss */
+    footer.footer {
+      border-top: 1px solid #f1f1f1; }
+    
+    /* line 31, src/assets/scss/theme.scss */
+    
+    
+    /* line 34, src/assets/scss/theme.scss */
+    .overlay {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 100%;
+      width: 100%;
+      opacity: 0;
+      -webkit-transition: .2s ease;
+      transition: .2s ease;
+      background-color: #008CBA; }
+    
+    /* line 46, src/assets/scss/theme.scss */
+    .card {
+      border: 0; }
+    
+    /* line 47, src/assets/scss/theme.scss */
+    .card-pin:hover .overlay {
+      opacity: .5;
+      border: 5px solid #f3f3f3;
+      -webkit-transition: ease .2s;
+      transition: ease .2s;
+      background-color: #000000;
+      cursor: -webkit-zoom-in;
+      cursor: zoom-in; }
+    
+    /* line 55, src/assets/scss/theme.scss */
+    .more {
+      color: white;
+      font-size: 14px;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      text-transform: uppercase;
+      -webkit-transform: translate(-20%, -20%);
+              transform: translate(-20%, -20%);
+      -ms-transform: translate(-50%, -50%); }
+    
+    /* line 66, src/assets/scss/theme.scss */
+    .card-pin:hover .card-title {
+      color: #ffffff;
+      margin-top: 10px;
+      text-align: center;
+      font-size: 1.2em; }
+    
+    /* line 73, src/assets/scss/theme.scss */
+    .card-pin:hover .more a {
+      text-decoration: none;
+      color: #ffffff; }
+    
+    /* line 78, src/assets/scss/theme.scss */
+    .card-pin:hover .download a {
+      text-decoration: none;
+      color: #ffffff; }
+    
+    /* line 83, src/assets/scss/theme.scss */
+    .social {
+      position: relative;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    
+    /* line 88, src/assets/scss/theme.scss */
+    .social .fa {
+      margin: 0 3px; }
+    
+  
+  
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    
+    .gallery {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        position: relative;
+        margin: 10px;
+    }
+    
+    .card-img {
+        width: 300px; /* Set a fixed width for images */
+        height: auto; /* Maintain aspect ratio */
+        transition: transform 0.3s ease; /* Smooth transition */
+    }
+    
+    .overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+    }
+    
+    .title {
+        color: white;
+        cursor: pointer; /* Pointer cursor on hover */
+    }
+    
+    .modal {
+        display: none; /* Hidden by default */
+        position: fixed; /* Stay in place */
+        z-index: 1000; /* Sit on top */
+        left: 0;
+        top: 0;
+        width: 100%; /* Full width */
+        height: 100%; /* Full height */
+        overflow: auto; /* Enable scroll if needed */
+        background-color: rgba(0, 0, 0, 0.8); /* Black background with opacity */
+    }
+    
+    .modal-content {
+        margin: auto;
+        display: block;
+        width: 80%; /* Width of the zoomed image */
+        max-width: 700px; /* Max width */
+    }
+    
+    .close {
+        color: white;
+        float: right;
+        font-size: 28px;
+    }
+    .navbar a:hover{
+      color: white;
+      text-decoration: underline;
+  }
+  .card-columns .card {
+    margin-bottom: 0.75rem; }
+
+
+    @media (max-width: 576px) {
+      body, html {
+        margin: 0;
+        padding: 0;
+    }
+      /* Navbar Styling */
+      .navbar {
+        padding: 5px!important;
+        position: absolute!important; /* Overlay on the carousel */
+        top: 0!important;
+        left: 0!important;
+        width: 100%!important;
+        z-index: 10!important;
+        font-size: 12px!important; /* Smaller font for small devices */
+    }
+    
+    .navbar-brand {
+        font-size: 16px!important; /* Slightly larger for branding */
+        color: #fff!important; /* Ensure visibility */
+    }
+    
+    .nav-link {
+        font-size: 12px!important; /* Smaller font for links */
+        color: #fff !important; /* Force white text for visibility */
+       
+    }
+    .navbar a:hover{
+        color:white!important;
+        text-decoration: underline!important;
+    }
+    .navbar-toggler {
+        border-color: #fff!important; /* White border for toggle icon */
+    }
+    .navbar-collapse {
+        text-align: right!important;
+    }
+    
+    .navbar-toggler-icon {
+        width: 8px!important; /* Set smaller width */
+        height: 8px!important; /* Set smaller height */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28150, 150, 150, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")!important;
+    }
+    .background-image {
+      width: 100%!important; /* Full width */
+      height: 250px!important; /* Set height to 50% of the viewport height */
+      overflow: hidden!important; /* Hide overflow if any */
+    }
+    
+    .background-image img {
+      width: 100%!important; /* Full width of the container */
+      height: auto!important; /* Maintain aspect ratio */}
+
+
+    .stays-caption{
+        height: 100px;
+        width: 100%;
+        font-size: 2rem;
+        position: absolute; /* Positioning to overlay on carousel */
+        bottom: 20%; /* Adjust as needed for vertical positioning */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for centering */
+        text-align: center; /* Center text within caption */
+        color: white;
+        font-family: "MonteCarlo", cursive;
+      }
+      .footer {
+        text-align: center!important; /* Center the text */
+        padding: 20px 10px!important; /* Add padding to footer for better spacing */
+      }
+      .footer-main h1{
+        font-weight: normal!important;
+      }
+      /* Footer boxes (For Bookings contact and Quick Links) */
+      .footer-box {
+        width: 100%!important; /* Make each box take up the full width */
+        margin: 10px 0!important; /* Add some space between the boxes */
+      }
+      
+      .footer-box h4 {
+        font-size: 1.2rem!important; /* Adjust the heading font size */
+        margin-bottom: 10px!important; /* Add space below the heading */
+      }
+      
+      /* Ensure the list items are centered */
+      .footer-box ul {
+        list-style: none!important;
+        padding: 0!important;
+        margin: 0!important;
+        text-align: center!important; /* Center the text inside the list */
+      }
+      
+      .footer-box ul .nav-item {
+        margin-bottom: 10px!important; /* Add space between list items */
+      }
+      
+      /* Footer rights section */
+      .container-rights {
+        padding-bottom: 0!important;
+        text-align: center!important; /* Center the footer text */
+        margin-top: 20px!important; /* Add spacing between the sections */
+      }
+      
+      .container-rights footer .col-md-4 {
+        justify-content: center!important; /* Center the content of the footer section */
+        text-align: center!important; /* Ensure the text is centered */
+      }
+      
+      .container-rights footer .text-white {
+        font-size: 0.9rem!important; /* Slightly reduce the font size */
+      }
+      .footer .py-5{
+        padding-bottom: 0!important;
+      }
+      .container-rights .d-flex{
+        padding-bottom: 0!important;
+      }
+  }
+  @media (min-width: 576px) and (max-width: 992px){
+    body, html {
+      margin: 0;
+      padding: 0;
+  }
+    .navbar {
+      padding: 15px;
+      position: absolute!important; /* Overlay on the carousel */
+      width: 100%!important;
+      z-index: 10!important;
+  }
+  
+  .navbar-brand {
+      font-size: 24px!important; /* Slightly larger for branding */
+      color: #fff!important; /* Ensure visibility */
+  }
+  
+  .nav-link {
+      font-size: 20px!important; /* Smaller font for links */
+      color: #fff !important; /* Force white text for visibility */
+     
+  }
+  .navbar a:hover{
+      color:white!important;
+      text-decoration: underline!important;
+  }
+  .navbar-toggler {
+      border-color: #fff!important; /* White border for toggle icon */
+  }
+  .navbar-collapse {
+      text-align: right!important;
+  }
+  
+  .navbar-toggler-icon {
+      width: 30px!important; /* Set smaller width */
+      height: 30px!important; /* Set smaller height */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28150, 150, 150, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")!important;
+  }
+  .background-image {
+    width: 100%!important; /* Full width */
+    height: 400px!important; /* Set height to 50% of the viewport height */
+    overflow: hidden!important; /* Hide overflow if any */
+  }
+  
+  .background-image img {
+    width: 100%!important; /* Full width of the container */
+    height: auto!important; /* Maintain aspect ratio */}
+
+
+  .stays-caption{
+      height: 100px;
+      width: 100%;
+      font-size: 3rem;
+      position: absolute; /* Positioning to overlay on carousel */
+      bottom: 30%; /* Adjust as needed for vertical positioning */
+      left: 50%; /* Center horizontally */
+      transform: translateX(-50%); /* Adjust for centering */
+      text-align: center; /* Center text within caption */
+      color: white;
+      font-family: "MonteCarlo", cursive;
+    }
+    .footer {
+      text-align: center!important; /* Center the text */
+      padding: 20px 10px!important; /* Add padding to footer for better spacing */
+    }
+    .footer-main h1{
+      font-weight: normal!important;
+    }
+    /* Footer boxes (For Bookings contact and Quick Links) */
+    .footer-box {
+      width: 100%!important; /* Make each box take up the full width */
+      margin: 10px 0!important; /* Add some space between the boxes */
+    }
+    
+    .footer-box h4 {
+      font-size: 1.2rem!important; /* Adjust the heading font size */
+      margin-bottom: 10px!important; /* Add space below the heading */
+    }
+    
+    /* Ensure the list items are centered */
+    .footer-box ul {
+      list-style: none!important;
+      padding: 0!important;
+      margin: 0!important;
+      text-align: center!important; /* Center the text inside the list */
+    }
+    
+    .footer-box ul .nav-item {
+      margin-bottom: 10px!important; /* Add space between list items */
+    }
+    
+    /* Footer rights section */
+    .container-rights {
+      padding-bottom: 0!important;
+      text-align: center!important; /* Center the footer text */
+      margin-top: 20px!important; /* Add spacing between the sections */
+    }
+    
+    .container-rights footer .col-md-4 {
+      justify-content: center!important; /* Center the content of the footer section */
+      text-align: center!important; /* Ensure the text is centered */
+    }
+    
+    .container-rights footer .text-white {
+      font-size: 0.9rem!important; /* Slightly reduce the font size */
+    }
+    .footer .py-5{
+      padding-bottom: 0!important;
+    }
+    .container-rights .d-flex{
+      padding-bottom: 0!important;
+    }
+  }
+  @media (min-width:992px) and (max-width: 1350px){
+    
+    .background-image {
+      width: 100%!important; /* Full width */
+      height: 550px!important; /* Set height to 50% of the viewport height */
+      overflow: hidden!important; /* Hide overflow if any */
+    }
+    
+    .background-image img {
+      width: 100%!important; /* Full width of the container */
+      height: auto!important; /* Maintain aspect ratio */}
+      .stays-caption{
+        height: 100px;
+        width: 100%;
+        font-size: 4rem;
+        position: absolute; /* Positioning to overlay on carousel */
+        bottom: 30%; /* Adjust as needed for vertical positioning */
+        left: 50%; /* Center horizontally */
+        transform: translateX(-50%); /* Adjust for centering */
+        text-align: center; /* Center text within caption */
+        color: white;
+        font-family: "MonteCarlo", cursive;
+      }
+  }

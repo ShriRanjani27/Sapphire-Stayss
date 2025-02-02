@@ -1,0 +1,728 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+.carousel-inner {
+    height: 100vh;
+    position: relative;
+}
+
+.logo {
+    filter: drop-shadow(0px 0px 5px white);
+    transition: transform 0.3s ease-in-out;
+}
+
+.logo:hover {
+    transform: scale(1.1); /* Slightly enlarges the logo on hover */
+}
+
+.carousel-item img {
+    position: relative;
+    z-index: 0;
+    height: 100%;
+    width: 100%;
+    object-fit:cover; /* Ensures the whole image is visible */
+}
+
+.navbar {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)); /* Darker shadow gradient */
+    position: absolute; /* Ensures it overlays the carousel */
+    width: 100%;
+    z-index: 1000; /* Keeps it above other elements */
+}
+
+.navbar-nav {
+    margin-left: auto; /* Pushes nav items to the right */
+}
+
+.nav-link, .navbar-brand {
+    font-size: 1.2rem;
+    font-family:  "Aboreto", system-ui; /* Apply MonteCarlo font */
+    color: white; /* Change color as needed for visibility */
+}
+.navbar-brand {
+    font-size: 1.7rem;
+}
+.navbar a:hover{
+    color:white;
+    text-decoration: underline;
+}
+
+.nav-item{
+    font-size: 1.2rem;
+}
+
+/* Resort Caption Styles */
+.resort-caption {
+    z-index: 10;
+    font-size: 4rem;
+    position: absolute; /* Positioning to overlay on carousel */
+    bottom: 35%; /* Adjust as needed for vertical positioning */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    text-align: center; /* Center text within caption */
+}
+
+.resort-caption .title {
+    font-size: 5rem;
+    font-family:"MonteCarlo", cursive; /* Apply Aboreto font */
+    font-weight: 200; /* Lighter weight for the h1 */
+    color: white; /* Change color for visibility */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Dark shadow effect */
+}
+
+.resort-caption p {
+    font-family: "Aboreto", system-ui; /* Apply MonteCarlo font */
+    color: white;
+    font-size: 2rem;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); /* Dark shadow effect */   
+}
+
+
+.row {
+    justify-content: center; /* Center the columns within the row */
+}
+
+.col-lg-6 {
+    text-align: left; /* Align text to the left for better readability */
+}
+.featurette {
+    margin-bottom: 40px; /* Add some space between featurettes */
+}
+
+/* Prevent horizontal scrolling */
+body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
+
+.about-caption h1{
+    color: white;
+    font-size: 3rem;
+    font-family: "MonteCarlo", cursive;}
+
+.styled-paragraph {
+    color: white;
+    font-style: italic;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 1.5rem; /* Adjust size as needed */
+    line-height: 1.5; /* Improve readability */
+    max-width: 900px; /* Optional: limit width for better wrapping */
+    overflow-wrap: break-word; /* Ensures long words wrap */
+}
+.image-container {
+    position: relative; /* Position relative for absolute positioning of text */
+}
+
+.card-img-top {
+    object-fit: cover; /* Ensures images cover the area without distortion */
+    height: 300px; /* Set a fixed height for images */
+    width: 100%; /* Ensure image covers full width */
+}
+
+.overlay-text {
+    position: absolute; /* Position text absolutely within container */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Adjust position to truly center */
+    color: white; /* Text color */
+    font-size: 1.5rem; /* Adjust font size as needed */
+    font-weight: bold; /* Make text bold */
+    text-shadow: 10px 10px 15px black; /* 5px blur */
+}
+
+.card-body {
+    background-color:transparent;
+    
+    flex-grow: 1; /* Allows the body to take up remaining space */
+    display: flex;
+    flex-direction: column;
+}
+.album{ 
+    padding-bottom: 30px;
+    margin-bottom: 0;
+    background-image: linear-gradient(to bottom,#3c3b39c6,#8e8b85a8);
+    background-size: cover; /* Ensures the image covers the whole section */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+}
+.album.py-5{
+    padding-bottom: 50px;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensures the body takes full height of the viewport */
+    margin: 0;
+}
+
+.swiper-slide {
+    display: flex; /* Make the slide a flex container to manage content flow */
+    flex-direction: column; /* Stack the contents vertically */
+    height: auto; /* Ensure the height adjusts to the content */
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.814);
+    display: flex; /* Make card a flex container */
+    flex-direction: column; /* Ensure the card contents stack vertically */
+    height: auto; /* Allow the card to grow in height based on content */
+    min-height: 400px; /* Set a max height for the card */
+    margin-bottom: 20px; /* Optional: add some space between cards */
+}
+
+.card-body {
+    background-color: rgba(164, 161, 146, 0.469);
+    flex-grow: 1; /* Allow the body to expand and take up available space */
+    padding: 1.5rem; /* Add more padding to the card body for more space */
+    overflow: visible; /* Ensure text overflows are visible */
+}
+
+.card-text {
+    white-space: normal; /* Allow text to wrap normally */
+    overflow: visible; /* Ensure the full text is visible */
+    height: auto; /* Adjust the height to content size */
+}
+
+.container-rights{
+    color: black;
+    height: 50px;
+    padding: 10px;
+}
+.footer{
+    text-align: center;
+    color: black;
+    background-image: linear-gradient(to bottom,#8e8b85a8,#dfdbd3a8);
+    padding-top: 0px;
+    padding: 10px;
+}
+
+.footer-main{
+    font-size: 3rem;
+    font-family: "MonteCarlo", cursive;  ;
+}
+.footer h5, 
+.footer a {
+    color:black!important ; /* Set text color to white */
+}
+
+.footer a:hover {
+    color: #181610;
+    text-decoration: underline; /* Optional: Underline on hover for better UX */
+}
+
+.footer-box{
+    min-width: 300px;
+    font-family: "Cinzel", serif;
+}
+.footer .nav{
+    font-size: 1.2rem;
+}
+.footer-main {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centers the content horizontally */
+    text-align: center;
+   
+}
+
+.footer-logo {
+    padding: 0%;
+    margin: 0%;
+    height: 150px; /* Adjust the size of the logo */
+    margin-right: 0; /* Space between the logo and the text */
+}
+footer.py-5{
+    padding-top: 0;
+    margin-top: 0;
+}
+/*the contact strip*/
+.contact-button-small {
+    display: inline-block;
+    background-color: #007BFF; /* Blue background */
+    color: white;
+    text-decoration: none;
+    padding: 6px 12px; /* Reduced padding for smaller size */
+    border-radius: 4px; /* Slightly smaller rounded corners */
+    font-size: 14px; /* Smaller font size */
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    justify-content: center;
+    padding: 15px;
+    margin: 15px;
+}
+
+.contact-button-small:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: scale(1.05); /* Slight zoom effect */
+    text-decoration: none; /* Ensure no underline on hover */
+}
+
+.contact-button-small:active {
+    background-color: #003d80; /* Even darker blue when clicked */
+    transform: scale(0.98); /* Slight shrink effect */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center if needed */
+    margin-top: 20px; /* Optional spacing from the top */
+}
+
+/*media quires*/
+/* Base Media Query for Small Devices (Max Width 576px) */
+/* Small Devices (Max Width 576px) */
+@media (max-width: 576px) {
+    /* General Styles */
+    /* Navbar Styling */
+    .navbar {
+        padding: 5px;
+        position: absolute; /* Overlay on the carousel */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        font-size: 16px; /* Smaller font for small devices */
+    }
+
+    .navbar-brand {
+        font-size: 16px; /* Slightly larger for branding */
+        color: #fff; /* Ensure visibility */
+    }
+
+    .nav-link {
+        font-size: 12px; /* Smaller font for links */
+        color: #fff !important; /* Force white text for visibility */
+       
+    }
+    .navbar a:hover{
+        color:white;
+        text-decoration: underline;
+    }
+    .navbar-toggler {
+        border-color: #fff; /* White border for toggle icon */
+    }
+    .navbar-collapse {
+        text-align: right;
+    }
+
+    .navbar-toggler-icon {
+        width: 20px; /* Set smaller width */
+        height: 20px; /* Set smaller height */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28150, 150, 150, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    .carousel-item img {
+        width: 100%; /* Fill the width of the carousel */
+        height: 100%; /* Fill the height of the carousel */
+        object-fit: cover; /* Maintain aspect ratio while covering space */
+    }
+    
+    /* General Carousel Adjustments */
+    .carousel-inner {
+        height: 200px; /* Fixed height for the carousel */
+        overflow: hidden; /* Hide any overflow if image height exceeds the container */
+    }
+    /* Resort Caption Styling */
+    .resort-caption  {
+        position: absolute;
+        font-size: 1rem;
+        bottom: 25%; /* Push caption above bottom */
+        z-index: 11;
+        color: #fff; /* White text for visibility */
+        text-align: center;
+        width: 80%; /* Adjust for better spacing */
+    }
+
+    .resort-caption .title {
+        font-size: 2rem; /* Smaller heading for small devices */
+        margin: 0;
+        padding: 0;
+    }
+
+    .resort-caption p {
+        font-size: 15px; /* Smaller paragraph text */
+        margin: 0;
+    }
+
+    /* General Adjustments */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+.about-caption h1{
+    font-size: 30px;
+}
+.styled-paragraph{
+    font-size: 16px;
+}
+
+.album{
+    padding: 30px;
+}
+.swiper {
+    padding: 0 10px;
+    height: 400px; /* Add some padding for the Swiper container */
+}
+
+.swiper-slide {
+    width: 100% !important; /* Make each slide take up full width */
+    box-sizing: border-box; /* Ensure proper box-sizing */
+}
+
+.card {
+    height: auto; /* Allow the card to adjust height according to content */
+}
+
+.card-body {
+    padding: 10px; /* Reduce padding inside the card for small devices */
+}
+
+.card-text {
+    font-size: 0.9rem; /* Slightly reduce font size to fit better */
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+    width: 100%; /* Ensure images take up full width of the card */
+    height: 250px; /* Set a fixed height for images */
+}
+
+.card-img-top {
+    object-fit: cover; /* Make images cover the container */
+    width: 100%; /* Ensure image stretches to fit the container */
+    height: 100%; /* Ensure the image height is consistent */
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 1.5rem; /* Slightly smaller text */
+}
+
+.swiper-button-next, .swiper-button-prev {
+    font-size: 10px; /* Reduce navigation button size */
+}
+
+.swiper-pagination {
+    bottom: 10px; /* Adjust the position of pagination for better visibility */
+}
+
+/*footer section*/
+.footer {
+    text-align: center; /* Center the text */
+    padding: 20px 10px; /* Add padding to footer for better spacing */
+}
+
+/* Footer boxes (For Bookings contact and Quick Links) */
+.footer-box {
+    width: 100%; /* Make each box take up the full width */
+    margin: 10px 0; /* Add some space between the boxes */
+}
+
+.footer-box h4 {
+    font-size: 1.2rem; /* Adjust the heading font size */
+    margin-bottom: 10px; /* Add space below the heading */
+}
+
+/* Ensure the list items are centered */
+.footer-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center the text inside the list */
+}
+
+.footer-box ul .nav-item {
+    margin-bottom: 10px; /* Add space between list items */
+}
+.footer-box ul .nav-item .right{
+    font-weight: 1000;
+}
+
+/* Footer rights section */
+.container-rights {
+    text-align: center; /* Center the footer text */
+    margin-top: 20px; /* Add spacing between the sections */
+}
+
+.container-rights footer .col-md-4 {
+    justify-content: center; /* Center the content of the footer section */
+    text-align: center; /* Ensure the text is centered */
+}
+
+.container-rights footer .text-white {
+    font-size: 0.9rem; /* Slightly reduce the font size */
+}
+
+}
+
+@media (min-width: 576px) and (max-width: 992px) {
+    /* Styles for medium-sized devices like tablets and small laptops */
+    .navbar {
+        padding:10px;
+        position: absolute; /* Overlay on the carousel */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+        font-size: 20px; /* Slightly larger font for medium devices */
+    }
+
+    .navbar-brand {
+        font-size: 24px; /* Larger size for branding */
+        color: #fff; /* Ensure visibility */
+    }
+
+    .nav-link {
+        font-size: 20px; /* Larger font for links */
+        color: #fff !important; /* Force white text for visibility */
+    }
+
+    .navbar a:hover {
+        color: white;
+        text-decoration: underline;
+    }
+
+    .navbar-toggler {
+        border-color: #fff; /* White border for toggle icon */
+    }
+    .navbar-collapse {
+        text-align: right;
+    }
+    .navbar-toggler-icon {
+        width: 25px; /* Set larger width for medium devices */
+        height: 25px; /* Set larger height */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28150, 150, 150, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+
+    .carousel-item img {
+        width: 100%; /* Fill the width of the carousel */
+        height: 100%; /* Fill the height of the carousel */
+        object-fit: cover; /* Maintain aspect ratio while covering space */
+    }
+
+    /* General Carousel Adjustments */
+    .carousel-inner {
+        height:400px; /* Adjust height for medium devices */
+        overflow: hidden; /* Hide any overflow if image height exceeds the container */
+    }
+
+    /* Resort Caption Styling */
+    .resort-caption {
+        font-size: 2rem;
+        position: absolute;
+        bottom: 35%; /* Push caption slightly up */
+        z-index: 11;
+        color: #fff; /* White text for visibility */
+        text-align: center;
+        width: 80%; /* Adjust for better spacing */
+    }
+
+    .resort-caption .title {
+        font-size: 3rem; /* Larger heading for medium devices */
+        margin: 0;
+        padding: 0;
+    }
+
+    .resort-caption p {
+        font-size: 25px; /* Larger paragraph text */
+        margin: 0;
+    }
+
+    /* General Adjustments */
+    body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden; /* Prevent horizontal scroll */
+    }
+    .about-caption h1 {
+        font-size: 40px; /* Slightly larger heading for better readability on medium devices */
+    }
+
+    .styled-paragraph {
+        font-size: 18px; /* Slightly larger text for better readability */
+    }
+
+    .swiper {
+        padding: 0 60px; /* More padding for the Swiper container */
+        height: 450px; /* Adjust height for better display */
+        width: 650px;   
+    }
+
+    .swiper-slide {
+        width: 100% !important; /* Ensure slides take up full width */
+        box-sizing: border-box;
+    }
+
+    .card {
+        height: auto; /* Allow the card to adjust height according to content */
+    }
+
+    .card-body {
+        padding: 15px; /* Increase padding inside the card */
+    }
+
+    .card-text {
+        font-size: 1rem; /* Increase font size for readability */
+    }
+
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 280px; /* Increase height of image container for better visual appearance */
+    }
+
+    .card-img-top {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 1.8rem; /* Slightly larger text */
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        font-size: 14px; /* Larger navigation button size */
+    }
+
+    .swiper-pagination {
+        bottom: 15px; /* Adjust the position of pagination */
+    }
+
+    /* Footer Section */
+    .footer {
+        text-align: center;
+        padding: 30px 20px; /* Add more padding for a better appearance */
+    }
+
+    .footer-box {
+        width: 100%;
+        margin: 15px 0; /* Add more space between the boxes */
+    }
+
+    .footer-box h4 {
+        font-size: 1.5rem; /* Increase heading font size for better visibility */
+        margin-bottom: 15px; /* Increase space below the heading */
+    }
+
+    .footer-box ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .footer-box ul .nav-item {
+        margin-bottom: 15px; /* Increase space between list items */
+    }
+
+    /* Footer Rights Section */
+    .container-rights {
+        text-align: center;
+        margin-top: 30px; /* Add more spacing between sections */
+    }
+
+    .container-rights footer .col-md-4 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .container-rights footer .text-white {
+        font-size: 1rem; /* Slightly increase font size for footer text */
+    }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+    .carousel-item img {
+        width: 100%; /* Fill the width of the carousel */
+        height: 100%; /* Fill the height of the carousel */
+        object-fit: cover; /* Maintain aspect ratio while covering space */
+    }
+
+    /* General Carousel Adjustments */
+    .carousel-inner {
+        height: 550px; /* Adjust height for medium devices */
+        overflow: hidden; /* Hide any overflow if image height exceeds the container */
+    }
+     .swiper {
+        padding: 0 30px; /* More padding for the Swiper container */
+        height: 500px; /* Adjust height for large screens */
+    }
+
+    .swiper-slide {
+        width: 33.33% !important; /* Ensure each slide takes 1/3 of the width */
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center; /* Center align the cards */
+    }
+
+    .card {
+        width: 320px;
+        height: 350px; /* Fixed height for all cards */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Ensure content is spaced evenly */
+        box-sizing: border-box; /* Ensure proper box-sizing */
+    }
+
+    .card-body {
+        padding: 20px; /* Add more padding inside the card for better spacing */
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start; /* Ensure content aligns at the top */
+        flex-grow: 1; /* Make the body flexible to fill remaining space */
+    }
+
+    .card-text {
+        font-size: 1.1rem; /* Slightly increase font size for better readability */
+        flex-grow: 1; /* Allow the text to take up remaining space */
+    }
+
+    .image-container {
+        position: relative;
+        overflow: hidden;
+        width: 100%;
+        height: 200px; /* Fixed height for image container */
+    }
+
+    .card-img-top {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        font-size: 2rem; /* Larger text for better visibility */
+    }
+
+    .swiper-button-next, .swiper-button-prev {
+        font-size: 16px; /* Larger navigation button size */
+    }
+
+    .swiper-pagination {
+        bottom: 20px; /* Adjust the position of pagination */
+    }
+}
+

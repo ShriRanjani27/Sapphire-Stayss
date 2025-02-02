@@ -1,0 +1,323 @@
+/* Ensure the body and HTML fill the entire viewport */
+
+body, html {
+    margin: 0;
+    padding: 0;
+    background-image: url(../see\ and\ do\ bg.png);
+    background-size: cover; /* Ensures the image scales to cover the entire page */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-position: center; /* Centers the image */
+    min-height: 100%; /* Ensures the body extends for content taller than the viewport */
+}
+/* Navbar styling */
+.navbar {
+    padding: 1rem;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+    position: absolute;
+    width: 100%;
+    z-index: 1000;
+}
+
+.nav-link, .navbar-brand {
+    font-size: 1.2rem;
+    font-family:  "Aboreto", system-ui;
+    color: white;
+}
+
+.navbar-brand {
+    font-size: 1.7rem;
+}
+
+.header{
+    color: white;
+    font-family:"MonteCarlo", cursive ;
+    font-size: 4rem;
+    padding: 10px;
+  }
+  .about-text{
+    font-size: 1.5rem;
+    color: white;
+    font-style: italic;
+  }
+.section-title {
+    color: white;
+    text-align: center;
+    font-family: "MonteCarlo", cursive;
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    height: 100%; /* Ensures consistent height */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #181610;
+}
+
+.card img {
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-body {
+    text-align: center;
+}
+
+.col-lg-3 {
+    max-width: 25%; /* Ensures 4 cards per row on larger screens */
+}
+
+@media (max-width: 992px) {
+    .col-lg-3 {
+        max-width: 50%; /* 2 cards per row for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .col-lg-3 {
+        max-width: 100%; /* 1 card per row for smaller screens */
+    }
+}
+.footer{
+  text-align: center;
+  color:white;
+  padding-top: 0px;
+  padding: 10px;
+}
+
+.footer-main{
+  font-size: 3rem;
+  font-family: "MonteCarlo", cursive;  ;
+}
+.footer h5, 
+.footer a {
+  color:white; /* Set text color to white */
+}
+
+.footer a:hover {
+  color: #181610;
+  text-decoration: underline; /* Optional: Underline on hover for better UX */
+}
+
+.footer-box{
+  min-width: 300px;
+  font-family: "Cinzel", serif;
+}
+footer.py-5{ /*include in every page main css*/
+    padding-bottom: 0!important;
+  }
+  footer.d-flex{
+    padding-bottom: 0!important;
+  }
+  .footer .nav{
+    font-size: 1.2rem;
+}
+
+  @media (max-width: 576px) {
+    /* Navbar Styling */
+    .navbar {
+      padding: 5px;
+      position: absolute; /* Overlay on the carousel */
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 10;
+      font-size: 12px; /* Smaller font for small devices */
+  }
+  
+  .navbar-brand {
+      font-size: 16px; /* Slightly larger for branding */
+      color: #fff; /* Ensure visibility */
+  }
+  
+  .nav-link {
+      font-size: 11px; /* Smaller font for links */
+      color: #fff !important; /* Force white text for visibility */
+     
+  }
+  .navbar a:hover{
+      color:white;
+      text-decoration: underline;
+  }
+  .navbar-toggler {
+      border-color: #fff; /* White border for toggle icon */
+  }
+  .navbar-collapse {
+      text-align: right;
+  }
+  
+  .navbar-toggler-icon {
+      width: 20px; /* Set smaller width */
+      height: 20px; /* Set smaller height */
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28150, 150, 150, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  .header{
+    font-size: 2rem;
+    padding: 10px;
+  }
+  .about-text{
+    font-size: 1rem;
+    color: white;
+    font-style: italic;
+  }
+  .section-title{
+    font-size: 2rem;
+  }
+  .main-section{
+    padding: 10px;
+  }
+  .footer {
+    text-align: center; /* Center the text */
+    padding: 20px 10px; /* Add padding to footer for better spacing */
+  }
+  
+  /* Footer boxes (For Bookings contact and Quick Links) */
+  .footer-box {
+    width: 100%; /* Make each box take up the full width */
+    margin: 10px 0; /* Add some space between the boxes */
+  }
+  
+  .footer-box h4 {
+    font-size: 1.2rem; /* Adjust the heading font size */
+    margin-bottom: 10px; /* Add space below the heading */
+  }
+  
+  /* Ensure the list items are centered */
+  .footer-box ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center; /* Center the text inside the list */
+  }
+  
+  .footer-box ul .nav-item {
+    margin-bottom: 10px; /* Add space between list items */
+  }
+  
+  /* Footer rights section */
+  .container-rights {
+    text-align: center; /* Center the footer text */
+    margin-top: 20px; /* Add spacing between the sections */
+  }
+  
+  .container-rights footer .col-md-4 {
+    justify-content: center; /* Center the content of the footer section */
+    text-align: center; /* Ensure the text is centered */
+  }
+  
+  .container-rights footer .text-white {
+    font-size: 0.9rem; /* Slightly reduce the font size */
+  }
+  footer.py-5{
+    padding-bottom: 0!important;
+  }
+  footer.d-flex{
+    padding-bottom: 0!important;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 992px){
+    .navbar {
+        padding: 15px;
+        position: absolute; /* Overlay on the carousel */
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 10;
+    }
+    
+    .navbar-brand {
+        font-size: 24px; /* Slightly larger for branding */
+        color: #fff; /* Ensure visibility */
+    }
+    
+    .nav-link {
+        font-size: 20px; /* Smaller font for links */
+        color: #fff !important; /* Force white text for visibility */
+       
+    }
+    .navbar a:hover{
+        color:white;
+        text-decoration: underline;
+    }
+    .navbar-toggler {
+        border-color: #fff; /* White border for toggle icon */
+    }
+    .navbar-collapse {
+        text-align: right;
+    }
+    
+    .navbar-toggler-icon {
+        width: 30px; /* Set smaller width */
+        height: 30px; /* Set smaller height */
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28150, 150, 150, 1%29' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+    }
+    .header{
+      font-size: 3.5rem;
+      padding: 20px;
+      padding-top: 30px;
+    }
+    .about-text{
+      font-size: 1.5rem;
+      color: white;
+      font-style: italic;
+    }
+    .section-title{
+      font-size: 3rem;
+    }
+    .main-section{
+      padding: 10px;
+    }
+    .footer {
+      text-align: center; /* Center the text */
+      padding: 20px 10px; /* Add padding to footer for better spacing */
+    }
+    
+    /* Footer boxes (For Bookings contact and Quick Links) */
+    .footer-box {
+      width: 100%; /* Make each box take up the full width */
+      margin: 10px 0; /* Add some space between the boxes */
+    }
+    
+    .footer-box h4 {
+      font-size: 1.2rem; /* Adjust the heading font size */
+      margin-bottom: 10px; /* Add space below the heading */
+    }
+    
+    /* Ensure the list items are centered */
+    .footer-box ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      text-align: center; /* Center the text inside the list */
+    }
+    
+    .footer-box ul .nav-item {
+      margin-bottom: 10px; /* Add space between list items */
+    }
+    
+    /* Footer rights section */
+    .container-rights {
+      text-align: center; /* Center the footer text */
+      margin-top: 20px; /* Add spacing between the sections */
+    }
+    
+    .container-rights footer .col-md-4 {
+      justify-content: center; /* Center the content of the footer section */
+      text-align: center; /* Ensure the text is centered */
+    }
+    
+    .container-rights footer .text-white {
+      font-size: 0.9rem; /* Slightly reduce the font size */
+    }
+    footer.py-5{
+      padding-bottom: 0!important;
+    }
+    footer.d-flex{
+      padding-bottom: 0!important;
+    }
+}
